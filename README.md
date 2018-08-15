@@ -6,6 +6,7 @@ pip install -r requirements.txt
 * run main file from console: \
 python main.py
 ## how it works?
+![example after evaluation](./figure.PNG =400x)
 1) Naive approach:
     * use cross section of curve and circle with constant radius \
     to find out next point
