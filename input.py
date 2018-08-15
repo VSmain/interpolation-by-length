@@ -47,3 +47,5 @@ segment_length = 0.2
 
 output_size = 40
 """max count of point after interpolation"""
+
+create_csv = True
