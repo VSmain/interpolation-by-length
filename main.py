@@ -24,14 +24,17 @@ def __init__():
     print('3) evaluation time milis: ', total_time, ' ms')
 
     ax1 = plt.subplot(221)
+    plt.gca().set_aspect('equal', adjustable='box')
     plt.grid()
     ax1.set_title('{x(t),y(t)}')
     plt.plot([p.x for p in points], [p.y for p in points], '-')
     ax2 = plt.subplot(222)
+    plt.gca().set_aspect('equal', adjustable='box')
     plt.grid()
     ax2.set_title('interpolated by len')
     plt.plot([p.x for p in int_points], [p.y for p in int_points], '*')
     ax3 = plt.subplot(223)
+    plt.gca().set_aspect('equal', adjustable='box')
     plt.grid()
     ax3.set_title('interpolation by curve length')
     plt.plot([p.x for p in points], [p.y for p in points], '-')
@@ -58,6 +61,8 @@ def __init__():
     print('evaluation time for accurate line interpolation with const segment length: ', total_time)
     plt.plot([p.x for p in points], [p.y for p in points], '-')
     plt.plot(interpolated['x'], interpolated['y'], '*-')
+    
+    # TODO: do not comment this lines
     plt.show()
     print('done')
 

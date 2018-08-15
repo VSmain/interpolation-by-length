@@ -42,7 +42,7 @@ t_max = 3
 interpolation_step = 0.00001
 """interpolation step of parameter for sampling"""
 
-segment_length = 0.2
+segment_length = 0.5
 """length of segment for fast interpolation by length or for naive approach"""
 
 output_size = 40
