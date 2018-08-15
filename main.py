@@ -54,7 +54,7 @@ def __init__():
     start_time = time.time()
     interpolated = naive_alg.interpolate_by_length()
     total_time = int(round((time.time() - start_time) * 1000))
-    
+
     print('evaluation time for accurate line interpolation with const segment length: ', total_time)
     plt.plot([p.x for p in points], [p.y for p in points], '-')
     plt.plot(interpolated['x'], interpolated['y'], '*-')
