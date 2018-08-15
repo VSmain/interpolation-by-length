@@ -1,5 +1,5 @@
 ## how to start?
-* install python 3.6
+* install python 3.6.2
 * clone this repository
 * open console inside cloned repository: \
 pip install -r requirements.txt
@@ -38,7 +38,7 @@ python main.py
    * slow for huge amount of points (because of sampling)
    * if you want something like sin(1/t) - you should use spline interpolation \
    and analytically solve the integral equation for your interpolation
-   * |integral(f(t)-interpolated_f(t))|, t=t0..t0+step must goes to zero 
+   * |integral(f(t)-interpolated_f(t))|, t=t0..t0+step must goes to zero
 
    advantages:
    * custom optimization
